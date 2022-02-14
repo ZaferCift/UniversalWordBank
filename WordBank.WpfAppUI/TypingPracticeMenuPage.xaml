@@ -1,0 +1,32 @@
+﻿<Page x:Name="pgTypingPracticeMenu" x:Class="WordBank.WpfAppUI.TypingPracticeMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WordBank.WpfAppUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TypingPracticeMenuPage">
+
+    <Grid>
+        <Grid x:Name="grdMenu" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800">
+            <Label Content="word(s)" HorizontalAlignment="Left" Margin="226,144,0,0" VerticalAlignment="Top" FontSize="18"/>
+            <TextBox x:Name="tbxWordNumber" HorizontalAlignment="Left" Height="28" Margin="152,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" FontSize="18" TextChanged="tbxWordNumber_TextChanged" PreviewTextInput="tbxWordNumber_PreviewTextInput"/>
+            <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="200,330,0,0" VerticalAlignment="Top" Width="200" Height="37" FontSize="16" Background="#FFDDEEFF" AutomationProperties.Name="startButton" Click="startButton_Click"  />
+            <ComboBox x:Name="cbxCategories"  HorizontalAlignment="Left" Margin="66,64,0,0" VerticalAlignment="Top" Width="207.558" DropDownOpened="ComboBox_DropDownOpened" Text="-Select a category-"     IsEditable="True" Focusable="False" IsReadOnly="True"   UseLayoutRounding="False" BorderThickness="1"  SelectionChanged="cbxCategories_SelectionChanged" FontSize="16" />
+            <CheckBox x:Name="chkbxAllCategories" Content="All Categories" HorizontalAlignment="Left" Margin="87,29,0,0" VerticalAlignment="Top" Height="15" Width="99" RenderTransformOrigin="0.5,0.5" Click="chkbxAllCategories_Click"  >
+                <CheckBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.4" ScaleY="1.4"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </CheckBox.RenderTransform>
+            </CheckBox>
+            <Label x:Name="lblWordLimit" Content="" HorizontalAlignment="Left" Margin="292,62,0,0" VerticalAlignment="Top" Width="130" FontSize="16"/>
+            <Label Content="Random" HorizontalAlignment="Left" Margin="70,144,0,0" VerticalAlignment="Top" Height="36" Width="77" FontSize="18"/>
+        </Grid>
+
+    </Grid>
+</Page>

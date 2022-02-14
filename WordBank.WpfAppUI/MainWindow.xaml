@@ -1,0 +1,25 @@
+﻿<Window x:Class="WordBank.WpfAppUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordBank.WpfAppUI"
+        mc:Ignorable="d"
+        Title="WordBank" Height="435" Width="800" Closing="Window_Closing" ResizeMode="NoResize" Icon="/Images/Logo.png">
+    <Grid Margin="0,0,0,-6">
+        <Grid HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="194" Background="#FF7486B6">
+            <ComboBox x:Name="cbxLanguages" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Width="144" Height="22" SelectionChanged="cbxLanguages_SelectionChanged">
+                <ComboBox.ContextMenu>
+                    <ContextMenu/>
+                </ComboBox.ContextMenu>
+                <ComboBoxItem Content="EngTr" HorizontalAlignment="Left" Width="142"  Selected="ComboBoxItem_Selected"/>
+            </ComboBox>
+            <Label x:Name="lblTest" Content="Test" HorizontalAlignment="Left" Margin="28,176,0,0" VerticalAlignment="Top" Width="144" Height="50" FontSize="24" BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MouseMove="testLabel_MouseMove" MouseLeave="testLabel_MouseLeave" Foreground="White" Background="{x:Null}" MouseLeftButtonDown="testLabel_MouseLeftButtonDown" IsEnabled="False"/>
+            <Label x:Name="lblTyping" Content="Typing" HorizontalAlignment="Left" Margin="28,121,0,0" VerticalAlignment="Top" Height="50" Width="144" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5" Foreground="White"  MouseMove="writingLabel_MouseMove" MouseLeave="writingLabel_MouseLeave" MouseLeftButtonDown="writingLabel_MouseLeftButtonDown" IsEnabled="False"/>
+            <Label Content="Select a language pair" HorizontalAlignment="Left" Margin="24,15,0,0" VerticalAlignment="Top" Height="32" Width="160" FontSize="14"/>
+
+        </Grid>
+        <Frame x:Name="mainFrame" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="606" NavigationUIVisibility="Hidden"  Margin="194,0,0,0"/>
+
+    </Grid>
+</Window>

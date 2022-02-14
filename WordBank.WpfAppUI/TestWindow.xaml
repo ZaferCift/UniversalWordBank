@@ -1,0 +1,47 @@
+﻿<Window x:Name="winTest" x:Class="WordBank.WpfAppUI.TestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordBank.WpfAppUI"
+        mc:Ignorable="d"
+        Title="Test" Height="600" Width="900" Visibility="Hidden" ResizeMode="NoResize" SizeToContent="Manual" HorizontalContentAlignment="Left" WindowState="Normal" FontStyle="Normal" WindowStyle="SingleBorderWindow" Closing="winTest_Closing" ScrollViewer.VerticalScrollBarVisibility="Visible" Icon="/Images/Logo.png">
+    <Grid Margin="1,10,-35,-55">
+        <Grid.Style>
+            <Style/>
+        </Grid.Style>
+        <Grid.ColumnDefinitions>
+
+
+        </Grid.ColumnDefinitions>
+        <Border x:Name="borderA" BorderBrush="Black" BorderThickness="1,1,1,1" Margin="267,250,487,296" CornerRadius="10,10,10,10" Padding="0,0,0,0">
+            <Label x:Name="lblA" Content="" FontSize="20" Margin="1,0,-1,-1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MouseMove="MoveMouse" MouseLeave="LeaveMouse" MouseLeftButtonDown="MouseButtonDown" Width="155"/>
+        </Border>
+        <Border x:Name="borderC" BorderBrush="Black" BorderThickness="1" Margin="267,337,487,209" CornerRadius="10,10,10,10">
+            <Label x:Name="lblC" Content="" FontSize="20" Margin="0,-1,0,-1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MouseMove="MoveMouse" MouseLeftButtonDown="MouseButtonDown" MouseLeave="LeaveMouse" Width="155" Height="54"/>
+        </Border>
+        <Border x:Name="borderB" BorderBrush="Black" BorderThickness="1" Margin="453,250,291,296" CornerRadius="10,10,10,10">
+            <Label x:Name="lblB" Content="" FontSize="20" Margin="0,-1,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MouseMove="MoveMouse" MouseLeftButtonDown="MouseButtonDown" MouseLeave="LeaveMouse" Width="155" Height="53"/>
+        </Border>
+        <Border x:Name="borderD" BorderBrush="Black" BorderThickness="1" Margin="453,337,291,209" CornerRadius="10,10,10,10">
+            <Label x:Name="lblD" Content="" FontSize="20" Margin="0,-1,0,-1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MouseLeave="LeaveMouse" MouseLeftButtonDown="MouseButtonDown" MouseMove="MoveMouse" HorizontalAlignment="Center" Width="167"/>
+        </Border>
+        <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="388,447,0,0" VerticalAlignment="Top" Height="45" Width="128" FontSize="18" Click="btnNext_Click" />
+        <Image x:Name="imgCorrection" HorizontalAlignment="Left" Height="100" Margin="82,210,0,0" VerticalAlignment="Top" Width="100"/>
+        <Grid x:Name="grdFinishMessage" Margin="317,245,273,176" Background="#FFAAC1C9" Opacity="0.85" Visibility="Hidden" Grid.ColumnSpan="2">
+            <Label Content="Test finished. Click OK to return&#xD;&#xA;the menu." HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Height="57" Width="221" FontSize="14" FontWeight="Bold"/>
+            <Button x:Name="btnOk" Content="OK" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Width="74" Height="29" Click="btnOk_Click"  />
+        </Grid>
+        <Rectangle HorizontalAlignment="Left" Height="66" Margin="242,144,0,0" Stroke="Black" VerticalAlignment="Top" Width="418" RadiusX="15" RadiusY="15"/>
+        <Grid Margin="243,156,273,384">
+            <Label x:Name="lblWordNo" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="65" FontSize="24" VerticalContentAlignment="Top" HorizontalContentAlignment="Right" Margin="0,-3,0,0"/>
+            <Label x:Name="lblWord" Content="" HorizontalAlignment="Left" Margin="83,-4,0,0" VerticalAlignment="Top" Width="324" FontSize="24" Height="42"/>
+            <Label Content=":" HorizontalAlignment="Left" Margin="65,-8,0,0" VerticalAlignment="Top" Height="50" Width="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Grid>
+
+
+
+
+
+    </Grid>
+</Window>
