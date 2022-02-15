@@ -50,8 +50,8 @@ _________________________________________________________________________
 
 ### For Example:
 
-For a native German speaker to be able to study Spanish words, the following tables must be added to the database.
--SpnGerWords 
+For a native German speaker to be able to study Spanish words, the following tables must be added to the database.<br>
+-SpnGerWords <br>
 -GerCategories
 
 Tables must have the same properties as existing tables.For the test player, for each category in the SpnGerWords table,
