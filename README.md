@@ -135,9 +135,9 @@ namespace WordBank.Logic.Abstract
     public interface IGerCategoryService
     {
         
-            void Add(GerCategory trCategory);
-            void Delete(GerCategory trCategory);
-            void Update(GerCategory trCategory);
+            void Add(GerCategory gerCategory);
+            void Delete(GerCategory gerCategory);
+            void Update(GerCategory gerCategory);
             List<GerCategory> GetList();
             GerCategory GetByWord(string word);
             GerCategory GetById(int id);
