@@ -1,3 +1,5 @@
+Other project Opinion Discovery is running at https://opiniondiscovery.com
+
 # UniversalWordBank
 
 This application has been developed with the aim of enabling people to learn the words in foreign languages divided into 
