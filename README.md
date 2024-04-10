@@ -1,4 +1,4 @@
-Other project Opinion Discovery is running at https://opiniondiscovery.com
+Other project Opinion Discovery online course web site is running at https://opiniondiscovery.com
 
 # UniversalWordBank
 
